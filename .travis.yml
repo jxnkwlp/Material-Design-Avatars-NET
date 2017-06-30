@@ -1,5 +1,4 @@
 language: csharp
 solution: MaterialDesignAvatars.sln
-install:
-  - sudo apt-get install -y gtk-sharp2
+install: 
   - nuget restore MaterialDesignAvatars.sln
