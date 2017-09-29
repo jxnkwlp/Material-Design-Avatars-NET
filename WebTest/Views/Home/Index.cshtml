@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    #result { margin-top: 15px; }
+        #result img { margin-right: 5px; margin-bottom: 5px; }
+</style>
+
+<h2>Example</h2>
+<hr />
+
+<div class="row">
+    <div>
+        <img src="~/home/Avatar?letter=E&size=64" />
+        <img src="~/home/Avatar?letter=N&size=64" />
+        <img src="~/home/Avatar?letter=G&size=64" />
+        <img src="~/home/Avatar?letter=L&size=64" />
+        <img src="~/home/Avatar?letter=I&size=64" />
+        <img src="~/home/Avatar?letter=S&size=64" />
+        <img src="~/home/Avatar?letter=H&size=64" />
+    </div>
+    <div>
+        <img src="~/home/Avatar?letter=简&size=64" />
+        <img src="~/home/Avatar?letter=体&size=64" />
+        <img src="~/home/Avatar?letter=中&size=64" />
+        <img src="~/home/Avatar?letter=文&size=64" />
+    </div>
+    <div>
+        <img src="~/home/Avatar?letter=繁&size=64" />
+        <img src="~/home/Avatar?letter=體&size=64" />
+        <img src="~/home/Avatar?letter=中&size=64" />
+        <img src="~/home/Avatar?letter=文&size=64" />
+    </div>
+</div>
+
+
+
+<h2>General </h2>
+<hr />
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Inputs char ...." id="user-input">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" onclick="general()">General</button>
+            </span>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div id="result"> 
+    </div>
+</div>
+
+
+@section scripts{
+    <script>
+        var url = '@Url.Action("Avatar")';
+        function general() {
+            if ($('#user-input').val().trim().length > 0) {
+                $('#result').html('');
+                var v = $('#user-input').val().trim();
+
+                var html = '';
+                for (var i = 0; i < v.split('').length ; i++) {
+                    if (v[i] != '' || v[i] != ' ') {
+                        html += '<img src="' + url + '?size=64&letter=' + v[i] + '"/>';
+                    }
+                }
+
+                $('#result').html(html);
+            }
+        }
+    </script>
+
+}

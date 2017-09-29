@@ -9,12 +9,18 @@ namespace WebTest.Controllers
 {
     public class HomeController : Controller
     {
+        // GET: Home
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult Avatar(string letter, int size = 512)
         {
             if (string.IsNullOrEmpty(letter))
                 return Content("No letter");
 
-            if (size < 0 && size > 5000)
+            if (size < 1 && size > 2000)
             {
                 return Content("Size for this test is not invalid.");
             }
@@ -25,6 +31,5 @@ namespace WebTest.Controllers
 
             return File(result, "image/png");
         }
-
     }
 }

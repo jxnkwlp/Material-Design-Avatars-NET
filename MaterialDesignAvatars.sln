@@ -7,12 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialDesignAvatars", "Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{2D1A706F-7817-4526-A869-AC02C0E2CFC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTest", "WebTest\WebTest.csproj", "{DCE49665-7D75-4A87-9DCC-8B8B9F09F6AB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47E0C2EC-B1B3-4AF8-9521-68DF62965199}"
 	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTest", "WebTest\WebTest.csproj", "{0420921B-F1BC-4AF1-9597-A1669CC2A5FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +29,10 @@ Global
 		{2D1A706F-7817-4526-A869-AC02C0E2CFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D1A706F-7817-4526-A869-AC02C0E2CFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D1A706F-7817-4526-A869-AC02C0E2CFC4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DCE49665-7D75-4A87-9DCC-8B8B9F09F6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCE49665-7D75-4A87-9DCC-8B8B9F09F6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCE49665-7D75-4A87-9DCC-8B8B9F09F6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCE49665-7D75-4A87-9DCC-8B8B9F09F6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0420921B-F1BC-4AF1-9597-A1669CC2A5FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0420921B-F1BC-4AF1-9597-A1669CC2A5FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0420921B-F1BC-4AF1-9597-A1669CC2A5FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0420921B-F1BC-4AF1-9597-A1669CC2A5FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
